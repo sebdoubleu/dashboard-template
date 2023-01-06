@@ -11,18 +11,20 @@ body {
 }
 
 svg {
-  fill: black;
+  fill: white;
   width: 32px;
 }
 
 .container {
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 6fr;
 }
 
 .sidebar {
   padding: 1rem 2rem 1.5rem 0rem;
+  background-color: var(--blue);
+  color: white;
 }
 
 .logo {
@@ -45,13 +47,14 @@ ul {
 
 ul {
   margin-top: 1.5rem;
+  margin-right: auto;
   row-gap: 1.1rem;
   font-size: 1.1rem;
   opacity: 0.95;
 }
 
 ul img {
-  width: 22px;
+  width: 18px;
 }
 
 ul li {
@@ -81,7 +84,7 @@ ul li:hover {
   display: grid;
   grid-template-columns: 2fr 1fr;
   align-items: center;
-  padding: 0.5rem 4rem 0 2rem;
+  padding: 0.5rem 5rem 0 2.5rem;
   box-shadow: 12px 5px 10px #00000020;
   z-index: 1;
   font-weight: 500;
