@@ -1,55 +1,99 @@
 :root {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  --blue: #1992d4;
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 svg {
-    fill: grey;
-    width: 32px;
-}
-
-ul li {
-    list-style: none;
+  fill: black;
+  width: 32px;
 }
 
 .container {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 4fr;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.sidebar {
+    padding: 1rem 2rem 1.5rem 0rem;
+}
+
+.logo {
+    font-size: 1.25rem;
+}
+
+.logo > div {
+  margin-right: auto;
+}
+
+.logo,
+ul {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  justify-items: center;
+  padding: 15px;
+  margin: 0;
+}
+
+ul {
+    margin-top: 1.5rem;
+  row-gap: 1.1rem;
+  font-size: 1.1rem;
+  opacity: 0.95;
+}
+
+ul li {
+  list-style: none;
+  transition: all 0.3s;
+  margin-right: auto;
+  margin-left: 0.4rem;
+}
+
+ul li:nth-of-type(7),
+ul img:nth-of-type(7) {
+  margin-top: 5rem;
+}
+
+ul li:hover {
+    transform: scale(1.1);
+    color: var(--blue);
+    cursor: pointer;
 }
 
 .main {
-    display: grid;
-    grid-template-rows: 1fr 3fr;
-    background-color: lightblue;
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  background-color: lightblue;
 }
 
 .top {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    background-color: aquamarine;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: aquamarine;
 }
 
 .bottom {
-    display: grid;
-    grid-template-columns: 1fr 1fr auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
 }
 
 .card-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .card {
-    grid-column: span 1;
+  grid-column: span 1;
 }
 
 .card-section > p {
-    grid-column: span 2;
+  grid-column: span 2;
 }
