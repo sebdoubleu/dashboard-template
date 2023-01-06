@@ -22,11 +22,11 @@ svg {
 }
 
 .sidebar {
-    padding: 1rem 2rem 1.5rem 0rem;
+  padding: 1rem 2rem 1.5rem 0rem;
 }
 
 .logo {
-    font-size: 1.25rem;
+  font-size: 1.25rem;
 }
 
 .logo > div {
@@ -44,17 +44,21 @@ ul {
 }
 
 ul {
-    margin-top: 1.5rem;
+  margin-top: 1.5rem;
   row-gap: 1.1rem;
   font-size: 1.1rem;
   opacity: 0.95;
+}
+
+ul img {
+  width: 22px;
 }
 
 ul li {
   list-style: none;
   transition: all 0.3s;
   margin-right: auto;
-  margin-left: 0.4rem;
+  margin-left: 0.6rem;
 }
 
 ul li:nth-of-type(7),
@@ -63,26 +67,76 @@ ul img:nth-of-type(7) {
 }
 
 ul li:hover {
-    transform: scale(1.1);
-    color: var(--blue);
-    cursor: pointer;
+  transform: scale(1.1);
+  color: var(--blue);
+  cursor: pointer;
 }
 
 .main {
   display: grid;
-  grid-template-rows: 1fr 3fr;
-  background-color: lightblue;
+  grid-template-rows: 1fr 4fr;
 }
 
 .top {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  background-color: aquamarine;
+  align-items: center;
+  padding: 0.5rem 4rem 0 2rem;
+  box-shadow: 12px 5px 10px #00000020;
+  z-index: 1;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.top img {
+  width: 25px;
+  cursor: pointer;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.search input {
+  width: 70%;
+  border-radius: 20px;
+  border: 0;
+  background-color: #eee;
+  padding: 0.5rem 1rem;
+}
+
+.profile,
+.greeting,
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile,
+.buttons {
+  justify-content: end;
+}
+
+button {
+  padding: 0.9em 1.6em;
+  border-radius: 20px;
+  border: 0;
+  background-color: var(--blue);
+  color: white;
+  cursor: pointer;
+}
+
+.greeting {
+  line-height: 1.5em;
 }
 
 .bottom {
   display: grid;
   grid-template-columns: 1fr 1fr auto;
+  background-color: lightblue;
 }
 
 .card-section {
