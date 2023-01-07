@@ -71,7 +71,6 @@ ul img:nth-of-type(7) {
 
 ul li:hover {
   transform: scale(1.1);
-  color: var(--blue);
   cursor: pointer;
 }
 
@@ -94,12 +93,18 @@ ul li:hover {
 .top img {
   width: 25px;
   cursor: pointer;
+  opacity: 0.9;
 }
 
 #profile-pic {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50px;
+}
+
+#profile-pic:nth-of-type(2) {
+  width: 35px;
+  height: 35px;
 }
 
 .search {
@@ -129,9 +134,13 @@ ul li:hover {
   justify-content: end;
 }
 
+.profile > p {
+  padding-left: 0.8rem;
+}
+
 button {
-  padding: 0.9em 1.6em;
-  border-radius: 20px;
+  padding: 0.7em 1.4em;
+  border-radius: 50px;
   border: 0;
   background-color: var(--blue);
   color: white;
@@ -174,8 +183,20 @@ button {
 
 .card {
   border-left: 4px solid #f0b429;
-  height: 150px;
-  padding: 1rem;
+  padding: 1.2rem;
+}
+
+.card-icons {
+  display: flex;
+  justify-content: end;
+  padding: 0.5rem 1rem 1rem 1rem;
+  gap: 15px;
+}
+
+.card-icons > * {
+  width: 25px;
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .card,
@@ -209,7 +230,7 @@ button:hover,
 }
 
 .announcement-card {
-  padding: 1.2rem;
+  padding: 2rem;
 }
 
 #trending {
@@ -217,7 +238,7 @@ button:hover,
 }
 
 .trending-card {
-  padding: 1.2rem;
+  padding: 1.5rem;
 }
 
 .announcement-topic:not(:last-of-type) {
